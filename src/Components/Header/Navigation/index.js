@@ -2,20 +2,22 @@ import Button from '@mui/material/Button';
 import { IoIosMenu } from "react-icons/io";
 import { FaAngleDown } from "react-icons/fa";
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 const Navigation =() =>{
+    const [isopenSidebarVal, setisopenSidebarVal] = useState(true);
     return (
         <nav>
              <div className='container'>
                   <div className='row'>
                      <div className='col-sm-2 navPart1'>
                          <div className='catWrapper'>
-                            <Button className='allCartTab align-items-center'>
+                            <Button className='allCartTab align-items-center' onClick={()=>setisopenSidebarVal(!isopenSidebarVal)}>
                                <span className='icon1 mr-2'><IoIosMenu/></span>
                                <span class='text'>ALL CATEGORIES</span>
                                <span className='icon2 ml-2'><FaAngleDown/></span>
                             </Button>
 
-                            <div className='sidebarNav'>
+                            <div className={`sidebarNav ${isopenSidebarVal===true ? 'open' : ''}`}>
                                    <ul>
                                     <li><Link to="/"><Button>Men</Button></Link></li>
                                     <li><Link to="/"><Button>Woman</Button></Link></li>
