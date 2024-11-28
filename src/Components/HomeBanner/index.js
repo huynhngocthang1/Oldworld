@@ -4,11 +4,13 @@ import Slider from "react-slick";
 const HomeBanner =()=>{
 
     var settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        arrows: true,
+        autoplay: true
     };
     return(
         <div className="homeBannerSection">

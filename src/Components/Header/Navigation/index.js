@@ -4,7 +4,7 @@ import { FaAngleDown } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 const Navigation =() =>{
-    const [isopenSidebarVal, setisopenSidebarVal] = useState(true);
+    const [isopenSidebarVal, setisopenSidebarVal] = useState(false);
     return (
         <nav>
              <div className='container'>
