@@ -22,6 +22,10 @@ body {
   }
 }
 
+.cursor{
+  cursor: pointer;
+}
+
 ::-webkit-scrollbar{
   width: 8px !important;
   height: 8px !important;
@@ -213,8 +217,42 @@ nav .navPart1 .catWrapper .sidebarNav ul li button{
   text-transform: capitalize !important;
 }
 
+nav .navPart1 .catWrapper .sidebarNav ul li button svg{
+  font-size: 16px;
+  opacity: 0.6;
+}
+
 nav .navPart1 .catWrapper .sidebarNav ul li button:hover{
   background: transparent !important;
+}
+
+nav .navPart1 .catWrapper .sidebarNav ul li{
+  position: static;
+}
+
+nav .navPart1 .catWrapper .sidebarNav ul li .submenu{
+  position: absolute;
+  top: 0px;
+  left: 101%;
+  width: 250px;
+  height: auto;
+  background: #fff;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease-in-out ;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+nav .navPart1 .catWrapper .sidebarNav ul li .submenu button{
+  border-radius: 0px !important;
+}
+
+nav .navPart1 .catWrapper .sidebarNav ul li:hover .submenu{
+  opacity: 1;
+  visibility: inherit;
+  left: 100%;
 }
 
 nav .allCartTab{
