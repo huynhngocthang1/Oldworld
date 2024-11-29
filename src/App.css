@@ -389,6 +389,15 @@ nav .navPart2 ul li:hover .submenu{
   outline: none !important;
 }
 
+.homeBannerSection{
+  cursor: pointer;
+}
+
+.homeProducts{
+  padding: 25px 0px;
+  width: 100%;
+}
+
 .locationModal .MuiPaper-elevation{
   padding: 25px;
   position: relative;
@@ -433,3 +442,4 @@ nav .navPart2 ul li:hover .submenu{
 .locationModal .close_ svg{
   font-size: 22px;
 }
+

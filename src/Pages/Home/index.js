@@ -9,10 +9,11 @@ const Home =()=> {
             <div className="container">
                 <div className="row">
                     <div className="col-md-3">
-                        
+                        <div className="banner">
+                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/banner-box.jpg" className="cursor"/>
+                        </div>
                     </div>
                     <div className="col-md-3">
-                        <img src="https://kbltheme.com/bacola/wp-content/uploads/2021/04/banner-box.jpg" className="cursor"/>
                     </div>
                 </div>
             </div>
