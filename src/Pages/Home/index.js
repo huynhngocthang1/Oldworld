@@ -12,6 +12,8 @@ import { Navigation } from 'swiper/modules';
 
 import ProductItem from "../../Components/ProductItem";
 import HomeCat from "../../Components/HomeCat";
+import banner4 from "../../assets/images/banner4.webp"
+import banner5 from "../../assets/images/banner5.webp"
 
 const Home =()=> {
 
@@ -33,13 +35,15 @@ const Home =()=> {
             <div className="container">
                 <div className="row">
                     <div className="col-md-3">
-                        <div className="banner">
-                            <img src={banner2} className="cursor w-100"/>
-                        </div>
+                        <div className="sticky">
+                           <div className="banner">
+                             <img src={banner2} className="cursor w-100"/>
+                           </div>
 
 
-                        <div className="banner mt-4">
-                            <img src={banner3} className="cursor w-100"/>
+                           <div className="banner mt-4">
+                             <img src={banner3} className="cursor w-100"/>
+                           </div>
                         </div>
                     </div>
                     <div className="col-md-9 productRow">
@@ -95,41 +99,26 @@ const Home =()=> {
                             <Button className="viewAllBtn ms-auto">View all <IoIosArrowRoundForward/></Button>
                         </div>
 
-                        <div className="product_row w-100 mt-4">
-                        <Swiper
-                           slidesPerView={4}
-                           spaceBetween={0}
-                          pagination={{
-                            clickable: true,
-                          }}
-                          modules={[Navigation]}
-                           className="mySwiper"
-                               >
-
-                            <SwiperSlide>
+                        <div className="product_row productRow2 w-100 mt-4 d-flex">
                             <ProductItem/>
-                            </SwiperSlide>
-
-                            <SwiperSlide>
                             <ProductItem/>
-                            </SwiperSlide>
-
-                            <SwiperSlide>
                             <ProductItem/>
-                            </SwiperSlide>
-
-                            <SwiperSlide>
                             <ProductItem/>
-                            </SwiperSlide>
-                            
-                            <SwiperSlide>
                             <ProductItem/>
-                            </SwiperSlide>
-                            
-                            
-                            </Swiper>
+                            <ProductItem/>
+                            <ProductItem/>
+                            <ProductItem/>
                         </div>
 
+                        <div className="d-flex mt-4 mb-5 bannerSec">
+                        <div className="banner">
+                            <img src={banner4} className="cursor w-100"/>
+                        </div>
+
+                        <div className="banner">
+                            <img src={banner5} className="cursor w-100"/>
+                        </div>
+                        </div>
                     </div>
                 </div>
             </div>

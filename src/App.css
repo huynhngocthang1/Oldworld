@@ -11,6 +11,7 @@ body {
   font-family: 'Lato', sans-serif;
   font-size: 14px;
   color: rgba(0, 0, 0, 0.8);
+  overflow-x: hidden;
 }
 
 .bg-blue{
@@ -555,6 +556,10 @@ nav .navPart2 ul li:hover .submenu{
   padding: 35px 0px;
 }
 
+.homeCat .swiper{
+  overflow: inherit !important;
+}
+
 .homeCat .swiper .item{
   padding: 15px;
   width: 100%;
@@ -564,6 +569,43 @@ nav .navPart2 ul li:hover .submenu{
 
 .homeCat .swiper .item img{
   width: 80%;
+}
+
+.homeCat .swiper-button-prev, .homeCat .swiper-button-next{
+  top: -30px !important;
+  width: 30px !important;
+  height: 30px !important;
+  color: #000;
+}
+
+.homeCat .swiper-button-prev{
+  right: 68px !important;
+  left: inherit !important;
+}
+
+.homeCat .swiper-button-prev::after, .homeCat .swiper-button-next::after{
+  font-size: 12px !important;
+}
+
+.productRow2{
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.productRow2 .productItem{
+  width: 24%;
+  overflow: hidden;
+  border-right: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+
+.bannerSec{
+  gap: 15px;
+}
+
+.sticky{
+  position: sticky;
+  top: 10px;
+  z-index: 100;
 }
 
 .locationModal .MuiPaper-elevation{
