@@ -414,9 +414,10 @@ nav .navPart2 ul li:hover .submenu{
   overflow: hidden;
 }
 
-.productRow .hd{
+.hd{
   font-size: 20px;
   font-weight: 600;
+  text-transform: uppercase;
 }
 
 .viewAllBtn{
@@ -534,12 +535,35 @@ nav .navPart2 ul li:hover .submenu{
   border: 1px solid rgba(0, 0, 0, 0.1) !important;
 }
 
+.product_row .swiper-button-prev{
+  left: 0px !important;
+}
+
+.product_row .swiper-button-next{
+  right: 0px !important;
+}
+
 .swiper{
   padding-right: 1px !important;
 }
 
 .badge-primary{
   background: #2bbef9 !important;
+}
+
+.homeCat{
+  padding: 35px 0px;
+}
+
+.homeCat .swiper .item{
+  padding: 15px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.homeCat .swiper .item img{
+  width: 80%;
 }
 
 .locationModal .MuiPaper-elevation{

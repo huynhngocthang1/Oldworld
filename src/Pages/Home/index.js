@@ -1,5 +1,6 @@
 import HomeBanner from "../../Components/HomeBanner";
-import banner2 from "../../assets/images/banner2.webp" 
+import banner2 from "../../assets/images/banner2.webp"
+import banner3 from "../../assets/images/banner3.webp" 
 import Button from '@mui/material/Button';
 import { IoIosArrowRoundForward } from "react-icons/io";
 import React from "react";
@@ -10,6 +11,7 @@ import { Navigation } from 'swiper/modules';
 
 
 import ProductItem from "../../Components/ProductItem";
+import HomeCat from "../../Components/HomeCat";
 
 const Home =()=> {
 
@@ -17,6 +19,7 @@ const Home =()=> {
         dots: true,
         infinite: false,
         speed: 500,
+        arrows: true,
         slidesToShow: 4,
         slidesToScroll: 1
       };
@@ -24,13 +27,19 @@ const Home =()=> {
     return(
         <>
          <HomeBanner/>
+         <HomeCat/>  
 
          <section className="homeProducts">
             <div className="container">
                 <div className="row">
                     <div className="col-md-3">
                         <div className="banner">
-                            <img src={banner2} className="cursor"/>
+                            <img src={banner2} className="cursor w-100"/>
+                        </div>
+
+
+                        <div className="banner mt-4">
+                            <img src={banner3} className="cursor w-100"/>
                         </div>
                     </div>
                     <div className="col-md-9 productRow">
