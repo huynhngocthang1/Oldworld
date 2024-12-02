@@ -24,7 +24,6 @@ const Home =()=> {
         dots: true,
         infinite: false,
         speed: 500,
-        arrows: true,
         slidesToShow: 4,
         slidesToScroll: 1
       };

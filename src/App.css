@@ -361,39 +361,53 @@ nav .navPart2 ul li:hover .submenu{
 
 .homeBannerSection{
   position: relative;
+}
+
+.homeBannerSection .swiper{
+  overflow: inherit !important;
+}
+
+.homeBannerSection .swiper .item{
   overflow: hidden;
+  border-radius: 10px;
 }
 
-.homeBannerSection .slick-arrow{
-  position: absolute;
-  top: 45%;
-  z-index: 100;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px !important;
-  height: 40px !important;
-  background: #000;
-  border-radius: 100%;
-  font-family: FontAwesome !important;
-  font-weight: bold;
-  box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%) !important ;
+.homeBannerSection .swiper-button-prev,
+.homeBannerSection .swiper-button-next {
+    position: absolute;
+    top: 45%; 
+    z-index: 100; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; 
+    height: 40px; 
+    background: #dcd3d3; 
+    border-radius: 50%; 
+    font-family: FontAwesome !important; 
+    font-weight: bold; 
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 
+                0 1px 2px rgba(0, 0, 0, 0.24); 
+    transition: all 0.3s ease; 
 }
 
-.homeBannerSection .slick-arrow.slick-next{
-  right: 25px !important;
+
+.homeBannerSection .swiper-button-next::after {
+  font-family: FontAwesome !important; 
+  content: '\f105'; 
+  color: #fff; 
+  font-size: 16px; 
 }
-.homeBannerSection .slick-arrow.slick-prev{
-  left: 25px !important;
+.homeBannerSection .swiper-button-prev::after {
+  font-family: FontAwesome !important; 
+  content: '\f104'; 
+  color: #fff; 
+  font-size: 16px; 
 }
 
-.homeBannerSection .slick-arrow.slick-next::before{
-  font-family: FontAwesome !important;
-  color: #fff;
-}
-.homeBannerSection .slick-arrow.slick-prev::before{
-  font-family: FontAwesome !important;
-  color: #fff;
+.homeBannerSection .swiper-button-prev:hover,
+.homeBannerSection .swiper-button-next:hover {
+    background: #444; 
 }
 
 .homeBannerSection *{
@@ -802,5 +816,44 @@ footer .copyright ul li a:hover svg{
 
 .locationModal .close_ svg{
   font-size: 22px;
+}
+
+/* Tùy chỉnh nút prev và next */
+.swiper-button-prev, 
+.swiper-button-next {
+    background-color: rgba(0, 0, 0, 0.6); /* Màu nền đen bán trong suốt */
+    color: #fff; /* Màu biểu tượng */
+    width: 40px; /* Chiều rộng nút */
+    height: 40px; /* Chiều cao nút */
+    border-radius: 50%; /* Nút dạng tròn */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease; /* Hiệu ứng chuyển đổi khi hover */
+    z-index: 10; /* Đảm bảo nằm trên các phần tử khác */
+}
+
+/* Hiệu ứng khi hover */
+.swiper-button-prev:hover, 
+.swiper-button-next:hover {
+    background-color: rgba(255, 255, 255, 0.8); /* Nền chuyển sang trắng */
+    color: #333; /* Biểu tượng đổi màu sang xám đậm */
+}
+
+/* Đặt vị trí của nút prev */
+.swiper-button-prev {
+    left: 10px; /* Cách mép trái 10px */
+}
+
+/* Đặt vị trí của nút next */
+.swiper-button-next {
+    right: 10px; /* Cách mép phải 10px */
+}
+
+/* Tùy chỉnh kích thước biểu tượng bên trong nút */
+.swiper-button-prev::after, 
+.swiper-button-next::after {
+    font-size: 18px; /* Kích thước biểu tượng */
+    font-weight: bold; /* Đậm hơn */
 }
 
