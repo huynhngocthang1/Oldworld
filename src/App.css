@@ -24,6 +24,11 @@ body {
   }
 }
 
+.badge.bg-success{
+  background: #e5f8ed !important;
+  color: #16b858 !important;
+}
+
 .cursor{
   cursor: pointer;
 }
@@ -475,15 +480,24 @@ nav .navPart2 ul li:hover .submenu{
   padding: 15px;
 }
 
-.productItem .info .oldPrice{
+.info .oldPrice{
   font-size: 16px;
   font-weight: bold;
   color: rgba(0,0,0,0.2);
   text-decoration: line-through;
 }
-.productItem .info .netPrice{
+
+.info .oldPrice.lg{
+  font-size: 20px;
+}
+
+.info .netPrice{
   font-size: 16px;
   font-weight: bold;
+}
+
+.info .netPrice.lg{
+  font-size: 20px;
 }
 
 .productItem .actions{
@@ -857,3 +871,54 @@ footer .copyright ul li a:hover svg{
     font-weight: bold; /* Đậm hơn */
 }
 
+.productModal .MuiPaper-elevation{
+  padding: 25px;
+  position: relative;
+  max-width: 1000px !important;
+  width: 900px !important;
+}
+
+.productModal h4{
+  font-size: 20px !important;
+  color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.productZoom{
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0px;
+  overflow: hidden;
+  border-radius: 15px;
+}
+.zoomSliderBig{
+  width: 100% !important;
+}
+.zoomSlider{
+  padding-top: 30px;
+}
+.zoomSlider .slick-slide{
+  padding-right: 20px !important;
+}
+.zoomSlider *{
+  outline: none !important;
+}
+.zoomSlider .item{
+  border: 2px solid transparent !important;
+  overflow: hidden;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.zoomSlider .slick-current .item{
+  border: 2px solid #3bb77e !important;
+}
+.zoomSlider .slick-arrow{
+  top: 55% !important;
+  zoom: 80% !important;
+}
+.zoomSlider .slick-arrow.slick-next{
+  right: -2% !important;
+}
+.zoomSlider .slick-arrow.slick-prev{
+  left: -5% !important;
+}
