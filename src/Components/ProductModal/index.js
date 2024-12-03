@@ -6,6 +6,11 @@ import Slider from 'react-slick';
 import { useRef } from 'react';
 import InnerImageZoom from 'react-inner-image-zoom';
 import 'react-inner-image-zoom/lib/InnerImageZoom/styles.css'
+import { FaMinus } from "react-icons/fa";
+import { FaPlus } from "react-icons/fa";
+import QuantityBox from '../QuantityBox';
+import { IoIosHeartEmpty } from "react-icons/io";
+import { MdOutlineCompareArrows } from "react-icons/md";
 const ProductModal =(props)=>{
 
     const zoomSliderBig = useRef();
@@ -55,6 +60,7 @@ const ProductModal =(props)=>{
             <div className='row mt-2 productDetailsModal'>
                 <div className='col-md-5'>
                     <div className='productZoom'>
+                        <div className='badge badge-primary'>23%</div>
                     <Slider {...settings2} className='zoomSliderBig' ref={zoomSliderBig}>
                         <div className='item'>
                             <InnerImageZoom
@@ -94,11 +100,23 @@ const ProductModal =(props)=>{
                     </Slider>
                 </div>
                 <div className='col-md-7'>
-                    <div className='d-flex info align-items-center'>
+                    <div className='d-flex info align-items-center mb-3'>
                         <span className='oldPrice lg me-2'>$9.35</span>
                         <span className='netPrice text-danger lg'>$7.25</span>
                     </div>
                     <span className='badge bg-success'>IN STOCK</span>
+                    <p className='mt-3'>Mì gói tiện lợi: Hương vị thơm ngon, dễ chế biến, phù hợp cho bữa ăn nhanh.</p>
+
+                    <div className='d-flex align-items-center'>
+                       <QuantityBox/>
+                        <Button className='btn-blue btn-lg btn-big btn-round ms-3'>Add to Cart</Button>
+                    </div>
+
+
+                    <div className='d-flex align-items-center mt-5 actions'>
+                        <Button className='btn-round btn-sml' variant='outlined'><IoIosHeartEmpty/> &nbsp;ADD TO WISHLIST</Button>
+                        <Button className='btn-round btn-sml ms-3' variant='outlined'><MdOutlineCompareArrows/> &nbsp;COMPARE</Button>
+                    </div>
                 </div>
             </div>
 
