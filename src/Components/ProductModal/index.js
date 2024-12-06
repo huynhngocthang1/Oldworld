@@ -3,7 +3,7 @@ import Button from '@mui/material/Button';
 import { MdClose } from "react-icons/md";
 import Rating from '@mui/material/Rating';
 import Slider from 'react-slick';
-import { useRef } from 'react';
+import { useContext, useRef } from 'react';
 import InnerImageZoom from 'react-inner-image-zoom';
 import 'react-inner-image-zoom/lib/InnerImageZoom/styles.css'
 import { FaMinus } from "react-icons/fa";
@@ -11,10 +11,13 @@ import { FaPlus } from "react-icons/fa";
 import QuantityBox from '../QuantityBox';
 import { IoIosHeartEmpty } from "react-icons/io";
 import { MdOutlineCompareArrows } from "react-icons/md";
+import { MyContext } from '../../App';
 const ProductModal =(props)=>{
 
     const zoomSliderBig = useRef();
     const zoomSlider = useRef();
+
+    const context = useContext(MyContext);
 
     var settings = {
         dots: false,
@@ -44,8 +47,8 @@ const ProductModal =(props)=>{
     return (
         <>
         <Dialog
-            open={true} className="productModal" onClose={()=>props.closeProductModal()} >          
-            <Button className='close_'  onClick={()=>props.closeProductModal()} ><MdClose /></Button>
+            open={true} className="productModal" onClose={()=>context.setisOpenProductModal(false)} >          
+            <Button className='close_'  onClick={()=>context.setisOpenProductModal(false)} ><MdClose /></Button>
             <h4 className='mb-1 font-weight-bold'>All Natural Italian-Style Chicken Meatballs</h4>
             <div className='d-flex align-items-center'>
                 <div  className='d-flex align-items-center me-4'>
@@ -59,7 +62,7 @@ const ProductModal =(props)=>{
 
             <div className='row mt-2 productDetailsModal'>
                 <div className='col-md-5'>
-                    <div className='productZoom'>
+                    <div className='productZoom position-relative'>
                         <div className='badge badge-primary'>23%</div>
                     <Slider {...settings2} className='zoomSliderBig' ref={zoomSliderBig}>
                         <div className='item'>

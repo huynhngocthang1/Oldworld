@@ -19,7 +19,7 @@ button{
 }
 
 .bg-blue{
-  background: #233a95;
+  background: #6d4aae;
 }
 
 @media (min-width: 1300px){
@@ -34,7 +34,7 @@ button{
 }
 
 .btn-blue{
-  background: #233a95 !important;
+  background: #6d4aae !important;
   color: #fff !important;
   text-transform: capitalize !important;
 }
@@ -299,7 +299,7 @@ nav .navPart1 .catWrapper .sidebarNav ul li:hover .submenu{
 }
 
 nav .allCartTab{
-  background: #2bbef9;
+  background: #6d4aae;
   padding: 10px 15px !important ;
   border-radius: 30px !important;
 }
@@ -561,7 +561,7 @@ nav .navPart2 ul li:hover .submenu{
 }
 
 .productItem .actions button:hover{
-  background: #233a95 !important;
+  background: #7a55c1!important;
 }
 .productItem .actions button:hover svg{
   color: #fff !important;
@@ -587,6 +587,7 @@ nav .navPart2 ul li:hover .submenu{
 .product_row .productItem{
   border-right: 1px solid transparent !important;
 }
+
 
 .product_row .swiper-slide:last-child .productItem{
   border: 1px solid rgba(0, 0, 0, 0.1) !important;
@@ -667,10 +668,11 @@ nav .navPart2 ul li:hover .submenu{
 .newsLetterSection{
   width: 100%;
   height: auto;
-  background: #233a95;
+  background: #7a55c1;
   position: relative;
   overflow: hidden;
   padding: 70px 0px;
+  background-image: linear-gradient(to bottom right, #7a55c1, #7a55c1);
 }
 
 .newsLetterSection .col-md-6{
@@ -730,7 +732,7 @@ nav .navPart2 ul li:hover .submenu{
   position: absolute;
   top: 3px;
   right: 3px;
-  background: #233a95 !important;
+  background: #6d4aae !important;
   font-size: 14px !important;
   padding: 10px 25px !important;
   color: #fff !important;
@@ -808,7 +810,7 @@ footer .copyright ul li a svg{
 }
 
 footer .copyright ul li a:hover{
-  background: #2bbef9 !important;
+  background: #6d4aae !important;
 }
 
 footer .copyright ul li a:hover svg{
@@ -919,6 +921,13 @@ footer .copyright ul li a:hover svg{
   overflow: hidden;
   border-radius: 15px;
 }
+.productZoom .badge{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 100;
+}
+
 .zoomSliderBig{
   width: 100% !important;
 }
@@ -983,4 +992,43 @@ footer .copyright ul li a:hover svg{
 }
 .productModal .actions button svg{
   font-size: 15px !important;
+}
+
+.product_Listing-Page{
+  padding: 35px 0px;
+}
+
+.product_Listing-Page .productListing{
+  gap: 20px;
+}
+
+.product_Listing-Page .productListing .sidebar{
+  width: 20%;
+  flex: 0 0 20%;
+}
+.product_Listing-Page .productListing .sidebar .filterBox h6{
+  font-weight: 700;
+  font-size: 14px;
+}
+.product_Listing-Page .productListing .sidebar .scroll ul li{
+  list-style: none;
+  margin-bottom: 0px;
+  width: 100%;
+}
+
+.css-imrjgg-MuiButtonBase-root-MuiCheckbox-root{
+  padding: 2px !important;
+}
+.css-rizt0-MuiTypography-root{
+  font-size: 13px !important;
+}
+
+.css-1umw9bq-MuiSvgIcon-root{
+  width: 20px !important;
+  height: 20px !important;
+}
+
+.product_Listing-Page .productListing .content_right{
+  width: 80%;
+  flex: 0 0 80%;
 }
