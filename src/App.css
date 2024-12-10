@@ -1006,6 +1006,10 @@ footer .copyright ul li a:hover svg{
   width: 20%;
   flex: 0 0 20%;
 }
+.product_Listing-Page .productListing .sidebar .sticky{
+  position: sticky !important;
+  top: 50px;
+}
 .product_Listing-Page .productListing .sidebar .filterBox{
   margin-bottom: 35px;
 }
@@ -1054,8 +1058,8 @@ footer .copyright ul li a:hover svg{
 }
 
 .product_Listing-Page .productListing .content_right{
-  width: 80%;
-  flex: 0 0 80%;
+  width: 75%;
+  flex: 0 0 75%;
   padding-left: 50px;
 }
 
@@ -1070,4 +1074,70 @@ footer .copyright ul li a:hover svg{
 .range-slider .range-slider__thumb{
   width: 15px !important;
   height: 15px !important;
+}
+
+.product_Listing-Page .productListing .content_right .showBy{
+  width: 100%;
+  background: #f7f8fd;
+  height: auto;
+  padding: 15px 25px;
+}
+
+.product_Listing-Page .productListing .content_right .showBy .btnWrapper button{
+  min-width: 35px !important;
+  height: 35px !important;
+  width: 35px !important;
+  border-radius: 50% !important;
+  color: #000;
+}
+
+.product_Listing-Page .productListing .content_right .showBy .btnWrapper button.act svg{
+  opacity: 1 !important;
+}
+
+.product_Listing-Page .productListing .content_right .showBy .btnWrapper button svg{
+  color: #000;
+  font-size: 18px !important;
+  opacity: 0.3;
+}
+
+.product_Listing-Page .productListing .content_right .showBy .btnWrapper button:hover svg{
+  opacity: 1;
+}
+
+.showByFilter button{
+  min-height: auto !important;
+  color: #000;
+}
+
+.showByFilter button svg{
+  color: #000;
+  opacity: 0.6;
+  margin-left: 5px;
+}
+.showByFilter button.act svg{
+  opacity: 1;
+}
+
+.showPerPageDropdown .MuiPaper-root{
+  width: 80px !important; 
+}
+
+.productListing{
+  display: flex;
+  flex-wrap: wrap;
+}
+.productListing .productItem.four{
+  width: 23%;
+}
+.productListing .productItem.three{
+  width: 31.5%;
+}
+.productListing .productItem.one{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.productListing .productItem.one .imgWrapper{
+  width: 25%;
 }

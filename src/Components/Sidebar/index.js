@@ -13,6 +13,7 @@ const Sidebar = () => {
     return (
         <>
         <div className="sidebar">
+            <div className='sticky'>
             <div className="filterBox">
                 <h6>PRODUCT CATEGORIES</h6>
 
@@ -74,6 +75,7 @@ const Sidebar = () => {
 
             <br/>
             <Link to="#"><img src={banner3} className='w-100'/></Link>
+        </div>
         </div>
         </>
     )
