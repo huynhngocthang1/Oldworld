@@ -60,7 +60,7 @@ const ProductModal =(props)=>{
 
 
                     <div className='d-flex align-items-center mt-5 actions'>
-                        <Button className='btn-round btn-sml' variant='outlined'><IoIosHeartEmpty/> &nbsp;ADD TO WISHLIST</Button>
+                        <Button className='btn-round btn-sml' variant='outlined'><IoIosHeartEmpty/> &nbsp;ADD TO WISHLIST 1</Button>
                         <Button className='btn-round btn-sml ms-3' variant='outlined'><MdOutlineCompareArrows/> &nbsp;COMPARE</Button>
                     </div>
                 </div>
