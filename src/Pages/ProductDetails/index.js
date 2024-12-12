@@ -230,10 +230,10 @@ const ProductDetails = () => {
                                                         Nguyen
                                                     </span>
                                                 </div>
-                                                <div className="info pl-5">
+                                                <div className="info ps-5">
                                                     <div className="d-flex align-items-center w-100">
                                                         <h5 className="text-light"> 09/09/2003</h5>
-                                                        <div className="ml-auto">
+                                                        <div className="ms-auto">
                                                             <Rating name="half-rating-read" value={4.5} precision={0.5} readOnly size="small" />
                                                         </div>
                                                     </div>
