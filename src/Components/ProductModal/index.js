@@ -17,6 +17,7 @@ import InnerImageZoom from 'react-inner-image-zoom';
 import Slider from 'react-slick';
 import 'react-inner-image-zoom/lib/InnerImageZoom/styles.css'
 import ProductZoom from '../ProductZoom';
+import { IoCart } from "react-icons/io5";
 
 const ProductModal =(props)=>{
 
@@ -55,7 +56,7 @@ const ProductModal =(props)=>{
 
                     <div className='d-flex align-items-center'>
                        <QuantityBox/>
-                        <Button className='btn-blue btn-lg btn-big btn-round ms-3'>Add to Cart</Button>
+                        <Button className='btn-blue btn-lg btn-big btn-round ms-3'><IoCart/>Add to Cart</Button>
                     </div>
 
 

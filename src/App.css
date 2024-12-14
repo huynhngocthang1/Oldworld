@@ -52,10 +52,22 @@ button {
   text-transform: capitalize !important;
 }
 
+.btn-blue svg{
+  font-size: 22px;
+}
+
+.text-red{
+  color: #ed174a !important;
+}
+.text-blue{
+  color: #53348c !important;
+}
+
 .btn-big {
   font-size: 15px !important;
   padding: 7px 30px !important;
   min-width: auto !important;
+  font-weight: bold !important;
 }
 
 .btn-round {
@@ -1217,6 +1229,9 @@ footer .copyright ul li a:hover svg {
 .productDetails h2.hd {
   font-size: 26px;
 }
+.productDetails h3.hd {
+  font-size: 18px;
+}
 
 .productDetails .oldPrice {
   font-size: 20px;
@@ -1374,4 +1389,228 @@ footer .copyright ul li a:hover svg {
 .reviewsCard .info p {
   font-size: 13px;
   line-height: 22px;
+}
+
+/* .cartPage .table thead{
+  background: #e3e3e3 !important;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.cartPage .table thead th{
+  border: 0px !important;
+}
+
+.cartPage .table thead th:first-child{
+  border-top-left-radius: 15px !important;
+  border-bottom-right-radius: 15px !important;
+}
+.cartPage .table thead th:last-child{
+  border-top-right-radius: 15px !important;
+  border-bottom-right-radius: 15px !important;
+} */
+
+/* Tổng quát */
+.cartPage {
+  padding: 40px 0;
+  background-color: #f5f5f5;
+}
+
+.cartPage h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.cartPage p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Bảng sản phẩm */
+.cartTable {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.cartTable thead {
+  background: #e3e3e3;
+  border-radius: 10px;
+}
+
+.cartTable thead th {
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+}
+
+.cartTable tbody td {
+  padding: 15px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.cartTable tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.cartTable tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Button xóa */
+.cartTable tbody button {
+  padding: 5px 10px;
+  font-size: 12px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #dc3545;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cartTable tbody button:hover {
+  background-color: #c82333;
+}
+
+/* Phần thanh toán */
+.cartSummary {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cartSummary h4 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.cartSummary p {
+  font-size: 16px;
+  margin: 10px 0;
+  text-align: center;
+  color: #555;
+}
+
+.cartSummary button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cartSummary button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cartTable thead {
+    display: none;
+  }
+
+  .cartTable tbody td {
+    display: block;
+    text-align: right;
+    padding: 10px;
+  }
+
+  .cartTable tbody td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .cartSummary {
+    margin-top: 20px;
+  }
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+.cartItemimgWrapper .imgWrapper{
+  width: 100px;
+  overflow: hidden;
+}
+
+.cartItemimgWrapper .info .allCartTab:hover{
+  text-decoration: none;
+}
+
+.cartItemimgWrapper .info h6{
+  color: #000;
+  font-weight: bold;
+}
+
+.cartItemimgWrapper .info h6:hover{
+  color: #ed174a !important;
+}
+
+
+span.remove {
+  display: inline-block;
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+
+span.remove svg{
+  font-size: 30px !important;
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+span.remove:hover {
+  transform: scale(1.2);
+  color: #c82333;
+}
+
+.cartPage .quantityDrop button{
+  zoom: 75%;
+}
+.cartPage table th, .cartPage table td{
+  vertical-align: middle;
+}
+
+.cartPage .table td, .cartPage .table th{
+  border-top: 0px !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+
+.cartPage table tbody tr:hover{
+  background: #fafafa;
+}
+
+.cartDetails{
+  border-radius: 7px !important;
+  position: sticky;
+  top: 20px;
+}
+.cartDetails h4{
+  font-size: 16px;
+  font-weight: 800 !important;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+
+.cartDetails span{
+
 }
